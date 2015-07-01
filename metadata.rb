@@ -1,16 +1,17 @@
-maintainer       "Guilhem Lettron"
-maintainer_email "guilhem.lettron@youscribe.com"
-name             "selenium"
-license          "Apache 2.0"
-description      "Install selenium"
+name 'selenium'
+maintainer 'Dennis Hoer'
+maintainer_email 'dennis.hoer@gmail.com'
+license 'MIT'
+description 'Installs/Configures Selenium'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version '2.4.0'
 
-version          "0.0.2"
+supports 'centos'
+supports 'redhat'
+supports 'mac_os_x'
+supports 'ubuntu'
+supports 'windows'
 
-recommends       "ark"
-recommends       "windows"
-recommends       "chocolatey"
-
-supports         "ubuntu"
-supports         "windows"
-depends 		 "windows"
+suggests 'windows', '~> 1.0'
+suggests 'nssm', '~> 1.0'
+suggests 'macosx_autologin', '~> 2.0'
